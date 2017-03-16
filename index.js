@@ -6,17 +6,18 @@
 module.exports = isError;
 
 /**
- * Test whether `V` is error object.
+ * Test whether `value` is error object.
  *
- * @param {*} V
+ * @param {*} value
  * @returns {boolean}
  */
 
-function isError(V) {
-  var tagName = Object.prototype.toString.call(V);
+function isError(value) {
+  var tag = Object.prototype.toString.call(value);
   return (
-    tagName === '[object Error]' ||
-    tagName === '[object Exception]' ||
-    V instanceof Error
+    tag === '[object Error]' ||
+    tag === '[object Exception]' ||
+    tag === '[object DOMException]' ||
+    value instanceof Error
   );
 }
