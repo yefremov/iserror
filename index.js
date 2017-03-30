@@ -13,11 +13,10 @@ module.exports = isError;
  */
 
 function isError(value) {
-  var tag = Object.prototype.toString.call(value);
-  return (
-    tag === '[object Error]' ||
-    tag === '[object Exception]' ||
-    tag === '[object DOMException]' ||
-    value instanceof Error
-  );
+  switch (Object.prototype.toString.call(value)) {
+    case '[object Error]': return true;
+    case '[object Exception]': return true;
+    case '[object DOMException]': return true;
+    default: return value instanceof Error;
+  }
 }
