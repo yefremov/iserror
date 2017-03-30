@@ -21,7 +21,7 @@
     "node"
   ],
   "author": "Anton Yefremov <anton.yefremov@gmail.com>",
-  "license": "MIT",
+  "license": "CC0-1.0 OR MIT",
   "bugs": {
     "url": "https://github.com/yefremov/iserror/issues"
   },
