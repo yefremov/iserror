@@ -3,6 +3,7 @@ node_js:
   - "6"
   - "6.1"
   - "5.11"
+  - "4.3"
   - "iojs"
 script:
   - "npm run-script test-cov"
