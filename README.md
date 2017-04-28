@@ -28,4 +28,4 @@ $ npm test
 
 ## License
 
-[MIT](LICENSE)
+[CC0](LICENSE.html) [MIT](LICENSE)
